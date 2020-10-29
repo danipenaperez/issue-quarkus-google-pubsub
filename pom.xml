@@ -12,10 +12,10 @@
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <quarkus-plugin.version>1.7.3.Final</quarkus-plugin.version>
+    <quarkus-plugin.version>1.8.3.Final</quarkus-plugin.version>
     <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-    <quarkus.platform.version>1.7.3.Final</quarkus.platform.version>
+    <quarkus.platform.version>1.8.3.Final</quarkus.platform.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
   </properties>
   <dependencyManagement>
@@ -44,26 +44,11 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-core</artifactId>
-        <version>1.93.8</version>
-    </dependency>
-    <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-pubsub</artifactId>
-        <version>1.108.1</version> 
-    </dependency>
-    
-    <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.npn/npn-api  THis is not the error
-	<dependency>
-	    <groupId>org.eclipse.jetty.npn</groupId>
-	    <artifactId>npn-api</artifactId>
-	    <version>8.1.2.v20120308</version>
-	    <scope>provided</scope>
+        <dependency>
+    <groupId>io.quarkiverse.googlecloudservices</groupId>
+    <artifactId>quarkus-google-cloud-pubsub</artifactId>
+    <version>0.2.0-SNAPSHOT</version>
 	</dependency>
-	-->
-    
   </dependencies>
   <build>
     <plugins>
